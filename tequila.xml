@@ -18,8 +18,12 @@
   <remote  name="github"
            fetch="https://github.com" />
 
+  <remote  name="leddaz-stuff"
+           fetch="https://github.com/leddaz-stuff"
+           revision="refs/heads/tortilla" />
+
   <!-- rootdir -->
-  <project path="manifest" name="platform_manifest" remote="tequila" />
+  <project path="manifest" name="tequila_manifest" remote="leddaz-stuff" />
   <project path="tequila_ota" name="tequila_ota" remote="tequila" revision="main" />
 
   <!-- bootable -->
@@ -62,8 +66,8 @@
   <project path="external/tinyxml" name="platform_external_tinyxml" remote="tequila" />
 
   <!-- frameworks -->
-  <project path="frameworks/av" name="platform_frameworks_av" remote="tequila" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="tequila" />
+  <project path="frameworks/av" name="tequila_frameworks_av" remote="leddaz-stuff" />
+  <project path="frameworks/base" name="tequila_frameworks_base" remote="leddaz-stuff" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="tequila" />
 
   <!-- hardware -->
@@ -119,7 +123,7 @@
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="tequila" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="tequila" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="tequila" />
+  <project path="packages/apps/Settings" name="tequila_packages_apps_Settings" remote="leddaz-stuff" />
   <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="tequila" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="tequila" />
   <project path="packages/apps/tequilaPapers" name="platform_packages_apps_tequilaPapers" remote="tequila" />
@@ -153,7 +157,7 @@
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="tequila" />
   <project path="vendor/google/gms" name="platform_vendor_google_gms" remote="tequila-gitlab" />
   <project path="vendor/google/pixel" name="platform_vendor_google_pixel" remote="tequila-gitlab" />
-  <project path="vendor/tequila" name="platform_vendor_tequila" remote="tequila" />
+  <project path="vendor/tequila" name="platform_vendor_tequila" remote="leddaz-stuff" />
   <project path="vendor/support" name="platform_vendor_support" remote="tequila" />
 
   <!-- vendor/qcom -->
